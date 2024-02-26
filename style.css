@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+  }
+  .btn {
+    background-color: transparent;
+    border: 3px solid red;
+    border-radius: 35px;
+    border-color: white;
+    height: 39px;
+    padding: 0px;
+  }
+   a.button {
+    padding: 0px;
+    height: 20px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  .brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar-links li {
+    list-style: none;
+  }
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+  }
+  .navbar-links li:hover {
+    background-color: #b03a3a;
+  }
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 18px;
+  }
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .toggle-button {
+      display: flex;
+    }
+    .navbar-links {
+      display: none;
+      width: 100%;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar-links ul {
+      flex-direction: column;
+      width: 100%;
+    }
+    .navbar-links li {
+      text-align: center;
+    }
+    .navbar-links li a {
+      padding: 0.5rem 1rem;
+    }
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+  
+  /*! mobiles !
+  /* changes */
+  .titlebox {
+    position: absolute;
+    top: 285px;
+    left: 32px;
+    gap: 32px;
+    width: fixed(314px);
+  }
+  .lucifer {
+    height: 900px;
+  
+    background-image: url(painting.jpg);
+    background-size: cover;
+  }
+  .titlebox {
+    width: Fixed (314px);
+    height: Hug (429px);
+    top: 285px;
+    left: 32px;
+    gap: 32px;
+  }
+  .art-piece {
+    font-family: Libre Caslon Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 314px;
+    height: 186px;
+    border: 1px;
+  }
+  .subheading {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    width: 314px;
+    height: 90px;
+  }
+  .learnmore {
+    width: 153px;
+    height: 42px;
+    border-radius: 4px;
+    margin-top: 32px;
+    background-color: transparent;
+    color: white;
+    border-color: 2px solid white;
+  }
+  .brand-title {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .newest-reads {
+    margin: 48px 182px 48px 32px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 161px;
+  }
+  .box {
+    width: 311px;
+    height: 550px;
+    top: 1209px;
+    left: 32px;
+  
+    text-align: center;
+  }
+  .image1 {
+    max-width: 80%;
+    align-content: center;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .grey-text {
+    margin: 25px 100px 12px 32px;
+    width: 96px;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #b7b7b7;
+  }
+  .black-text {
+    font-family: Inter;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+  
+    margin-top: 0;
+  
+    height: 60px;
+    width: 220px;
+    display: inline-block;
+  }
+  .link {
+    width: 96px;
+    height: 18px;
+    justify-content: right;
+    margin: 26px 32px 8px 183px;
+    border: none;
+    background-color: transparent;
+    color: #d9852c;
+    font-size: 8px;
+  }
+  .border-box {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-left: 32px;
+    width: 310px;
+    border-top-left-radius: 0px;
+  }
+  .half-box {
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .half-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .lucifer {
+      height: 1200px;
+    
+      background-image: url(painting.jpg);
+      background-size: cover;
+    }
+  }
+  
