@@ -7,4 +7,3 @@ toggleButton.addEventListener('click',() => {
 //this is a commit to know its working or not
 //this is another
 // this is twice
-const
